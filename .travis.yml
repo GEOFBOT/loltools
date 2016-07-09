@@ -1,0 +1,3 @@
+language: scala
+
+# TODO: deploy on push to master branch
