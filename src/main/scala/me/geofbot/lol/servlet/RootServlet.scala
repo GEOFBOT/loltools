@@ -1,8 +1,8 @@
-package me.geofbot.lol
+package me.geofbot.lol.servlet
 
-import org.scalatra._
+import me.geofbot.lol.LoltoolsStack
 
-class LOLtoolsServlet extends LoltoolsStack {
+class RootServlet extends LoltoolsStack {
 
   get("/") {
     <html>
@@ -20,5 +20,7 @@ class LOLtoolsServlet extends LoltoolsStack {
       </body>
     </html>
   }
+
+  notFound()
 
 }
