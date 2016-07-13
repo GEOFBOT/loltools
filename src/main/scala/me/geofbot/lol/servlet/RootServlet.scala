@@ -21,6 +21,4 @@ class RootServlet extends LoltoolsStack {
     </html>
   }
 
-  notFound()
-
 }
