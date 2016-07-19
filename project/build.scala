@@ -30,7 +30,10 @@ object LoltoolsBuild extends Build {
         "ch.qos.logback" % "logback-classic" % "1.1.5" % "runtime",
         "org.eclipse.jetty" % "jetty-webapp" % "9.2.15.v20160210" % "container",
         "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
-        "org.webjars" % "bootstrap-material-design" % "0.5.9",
+        "org.webjars.npm" % "jquery" % "2.2.4",
+        "org.webjars.npm" % "bootstrap" % "3.3.6",
+        "org.webjars.npm" % "bootstrap-material-design" % "0.5.9",
+        "org.webjars.bower" % "snackbarjs" % "1.1.0",
         "org.webjars.npm" % "nouislider" % "8.5.1"
       ),
       scalateTemplateConfig in Compile <<= (sourceDirectory in Compile){ base =>
