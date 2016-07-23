@@ -47,7 +47,13 @@ object LoltoolsBuild extends Build {
             Some("templates")
           )
         )
-      }
+      },
+      // disable eviction warnings
+      evictionWarningOptions in update := EvictionWarningOptions
+        .default
+        .withWarnTransitiveEvictions(false)
+        .withWarnDirectEvictions(false)
+        .withWarnScalaVersionEviction(false)
     )
   ).enablePlugins(JettyPlugin)
 }
